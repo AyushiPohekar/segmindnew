@@ -69,6 +69,7 @@ const FilterPage = () => {
     navigate(`/models/type`, { state: { elemert: element } });
   };
   const decideType = (desiredType, name) => {
+    console.log(desiredType)
     navigate(`/${desiredType}`, {
       state: { models: models, desiredType: desiredType },
     });
